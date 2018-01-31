@@ -8,8 +8,10 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages.component';
 import { FormsModule } from '@angular/forms';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+// n2-Charts
 import { ChartsModule } from 'ng2-charts';
 import { GraficoDonaComponent } from '../components/graficoDona/graficoDona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations: [
@@ -18,7 +20,8 @@ import { GraficoDonaComponent } from '../components/graficoDona/graficoDona.comp
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,

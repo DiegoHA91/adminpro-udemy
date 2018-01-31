@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SlidebarService} from '../../services/service.index';
 
 @Component({
   selector: 'app-slidebar',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor( public _slidebar: SlidebarService) { }
 
   ngOnInit() {
   }
