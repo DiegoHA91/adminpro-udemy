@@ -2,14 +2,17 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-grafico-dona></app-grafico-dona>
+                <h3>{{graficos.grafico1.leyenda}}</h3>
+                <app-grafico-dona [ChartData]="graficos.grafico1.data" [ChartLabels]="graficos.grafico1.labels" ChartType="doughnut">
+                </app-grafico-dona>
             </div>
         </div>
     </div>
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-grafico-dona [ChartData]="" [ChartLabels]="" [ChartType]="">
+                <h3>{{graficos.grafico2.leyenda}}</h3>
+                <app-grafico-dona [ChartData]="graficos.grafico2.data" [ChartLabels]="graficos.grafico2.labels" ChartType="doughnut">
                 </app-grafico-dona>
             </div>
         </div>
@@ -19,14 +22,18 @@
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-grafico-dona></app-grafico-dona>
+                <h3>{{graficos.grafico3.leyenda}}</h3>
+                <app-grafico-dona [ChartData]="graficos.grafico3.data" [ChartLabels]="graficos.grafico3.labels" ChartType="doughnut">
+                </app-grafico-dona>
             </div>
         </div>
     </div>
     <div class="col-6">
         <div class="card">
             <div class="card-body">
-                <app-grafico-dona></app-grafico-dona>
+                <h3>{{graficos.grafico4.leyenda}}</h3>
+                <app-grafico-dona [ChartData]="graficos.grafico4.data" [ChartLabels]="graficos.grafico4.labels" ChartType="doughnut">
+                </app-grafico-dona>
             </div>
         </div>
     </div>
