@@ -15,7 +15,7 @@ export class SlidebarService {
         {titulo: 'Gráficas', url: '/grafica1'}
       ]
     }
-  ];
+  ]
 
   constructor() {
   }

@@ -23,4 +23,4 @@ const pagesRoutes: Routes = [
     },
 ];
 
-export const PAGES_ROUTES = RouterModule.forChild(pagesRoutes);
+export const PAGES_ROUTES = RouterModule.forChild(pagesRoutes)
