@@ -12,6 +12,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
 import { ChartsModule } from 'ng2-charts';
 import { GraficoDonaComponent } from '../components/graficoDona/graficoDona.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { RegistroIncidentesComponent } from './registro-incidentes/registro-incidentes.component';
+import { RegistroLlamadasIncidentesComponent } from './registro-llamadas-incidentes/registro-llamadas-incidentes.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +23,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         Graficas1Component,
         IncrementadorComponent,
         GraficoDonaComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        RegistroIncidentesComponent,
+        RegistroLlamadasIncidentesComponent
     ],
     exports: [
         DashboardComponent,
