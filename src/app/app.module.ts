@@ -23,12 +23,13 @@ import { FormsModule } from '@angular/forms';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NopagefoundComponent,
+    NopagefoundComponent
   ],
   imports: [
     BrowserModule,
