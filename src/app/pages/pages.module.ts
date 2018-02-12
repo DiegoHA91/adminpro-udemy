@@ -16,6 +16,8 @@ import {GraficoDonaComponent} from '../components/graficoDona/graficoDona.compon
 import {AccountSettingsComponent} from './account-settings/account-settings.component';
 import {RegistroIncidentesComponent} from './registro-incidentes/registro-incidentes.component';
 import {RegistroLlamadasIncidentesComponent} from './registro-llamadas-incidentes/registro-llamadas-incidentes.component';
+import { ReportsComponent } from './reports/reports.component';
+import { PromesasComponent } from './promesas/promesas.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import {RegistroLlamadasIncidentesComponent} from './registro-llamadas-incidente
     RegistroIncidentesComponent,
     RegistroLlamadasIncidentesComponent,
     RegistroLlamadasComponent,
-    TableRegistroLlamadasComponent
+    TableRegistroLlamadasComponent,
+    ReportsComponent,
+    PromesasComponent
   ],
   exports: [
     DashboardComponent,
