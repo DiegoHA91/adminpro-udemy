@@ -18,6 +18,7 @@ import {RegistroIncidentesComponent} from './registro-incidentes/registro-incide
 import {RegistroLlamadasIncidentesComponent} from './registro-llamadas-incidentes/registro-llamadas-incidentes.component';
 import { ReportsComponent } from './reports/reports.component';
 import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PromesasComponent } from './promesas/promesas.component';
     RegistroLlamadasComponent,
     TableRegistroLlamadasComponent,
     ReportsComponent,
-    PromesasComponent
+    PromesasComponent,
+    RxjsComponent
   ],
   exports: [
     DashboardComponent,

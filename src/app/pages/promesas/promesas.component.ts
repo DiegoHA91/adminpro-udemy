@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {reject} from "q";
-import {setInterval} from "timers";
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-promesas',
@@ -10,11 +8,25 @@ import {setInterval} from "timers";
 export class PromesasComponent implements OnInit {
 
   constructor() {
-    let promesa = new Promise( (resolve, reject) => {
+
+
+    this.contarTres().then(
+      () => console.log('Termino!')
+    )
+      .catch(error => console.error('Error en la promesa', error));
+  }
+
+  ngOnInit() {
+  }
+
+
+  contarTres(): Promise<boolean> {
+
+    return new Promise((resolve, reject) => {
 
       let contador = 0;
 
-      let intervalo =  setInterval(() => {
+      const intervalo = setInterval(() => {
 
 
         contador += 1;
@@ -26,16 +38,8 @@ export class PromesasComponent implements OnInit {
           clearInterval(intervalo);
         }
 
-      },1000);
+      }, 1000);
     });
-
-    promesa.then(
-      () => console.log('Termino!')
-    )
-      .catch(error => console.error('Error en la promesa', error));
-  }
-
-  ngOnInit() {
   }
 
 }
